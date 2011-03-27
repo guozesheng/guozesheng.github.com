@@ -1,15 +1,42 @@
 <html>
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			$(".flip").click(function()
+			{
+				$(".panel").slideToggle("slow");
+			});
+		});
+	</script>
+	<style type="text/css">
+	div.panel,p.flip
+	{
+		margin: 0px;
+		padding: 5px;
+		text-align: center;
+		background: #e5eecc;
+		border: solid 1px #c3c3c3;
+	}
 
-    <title>Welcome to XiaoGuo's home page</title>
-    
+	div.panel
+	{
+		height: 30px;
+		display: none;
+	}
+	</style>
+	<title>Welcome to XiaoGuo's home page</title>
+
 </head>
 <body>
-    <a href="music/">music</a>
-    <center>
-    <h1>Welcome to XiaoGuo's home page!</h1>
-    </center>
+	<center>
+	<div class="panel">
+		<a href="music/">music</a>
+	</div>
+	<h1 class="flip">Welcome to XiaoGuo's home page!</h1>
+	</center>
 </body>
 
 
