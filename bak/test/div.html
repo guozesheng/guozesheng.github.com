@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>2.html</title>
+<style type="text/css">
+	.mytable1, .mytable2
+	{
+		position: absolute;
+	}
+	.mytable1
+	{
+		z-index: 1;
+	}
+	.title
+	{
+		cursor: move;
+	}
+	.min, .close
+	{
+		cursor: pointer;
+	}
+</style>
+<script type="text/javascript">
+	function move(element, event)
+	{
+	    element.style.zIndex++;
+		var x = parseInt(element.style.left);
+		var y = parseInt(element.style.top);
+		var deltaX = event.clientX - x;
+		var deltaY = event.clientY - y;
+		
+		if (document.addEventListener)
+		{
+			document.addEventListener("mousemove", moveHandler, true);
+			document.addEventListener("mouseup", upHandler, true);
+		}
+		else if (document.attachEvent)
+		{
+			document.attachEvent("onmousemove", moveHandler, true);
+			document.attachEvent("onmouseup", upHandler, true);
+		}
+		
+		function moveHandler(e)
+		{
+			if (!e)
+			{
+				e = window.event;
+			}
+			element.style.left = (e.clientX - deltaX)+"px";
+			element.style.top = (e.clientY - deltaY)+"px";
+		}
+		
+		function upHandler(e)
+		{
+			if (!e)
+			{
+				e = window.event;
+			}
+			if(document.removeEventListener)
+			{
+				document.removeEventListener("mouseup", upHandler, true);
+				document.removeEventListener("mousemove", moveHandler, true);
+			}
+			else if (document.detachEvent)
+			{
+				document.detachEvent("onmouseup", upHandler);
+				document.detachEvent("onmousemove", moveHandler);
+			}
+		}
+	}
+</script>
+</head>
+
+<body>
+
+<div id="pare1" style="left: 200px; top: 300px;" class="mytable1">
+<table width="500" height="343" border="1">
+  <tr>
+    <td class="title" onMouseDown="move(pare1, event);" width="391" height="24" bgcolor="#CCCCCC">标题1</td>
+    <td class="min" width="24"><img src="min.png" /></td>
+    <td class="close" width="24"><img src="cls.png" /></td>
+  </tr>
+  <tr>
+    <td colspan="3" valign="top" bgcolor="#FFFFCC">这是就是内容啊</td>
+  </tr>
+</table>
+</div>
+
+<div id="pare2" style="left: 100px; top: 200px;" class="mytable2">
+<table width="500" height="343" border="1">
+  <tr>
+    <td class="title" onMouseDown="move(pare2, event);" width="391" height="24" bgcolor="#CCCCCC">标题2</td>
+    <td class="min" width="24"><img src="min.png" /></td>
+    <td class="close" width="24"><img src="cls.png" /></td>
+  </tr>
+  <tr>
+    <td colspan="3" valign="top" bgcolor="#FFFFCC">这是就是内容啊</td>
+  </tr>
+</table>
+</div>
+
+</body>
+</html>
