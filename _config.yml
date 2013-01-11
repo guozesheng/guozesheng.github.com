@@ -10,8 +10,9 @@ url:              http://guozs.com
 feed:             /atom.xml
 author:
     name:         Guo Zesheng
-        description:      "XiaoGuo\'s Site"
-        author_info:      <a href="http://guozs.com/about">XiaoGuo</a>
+    email:        <a href="mailto:guozesheng@gmail.com">guozesheng@gmail.com</a>
+description:      "XiaoGuo\'s Site"
+author_info:      <a href="http://guozs.com/about">XiaoGuo</a>
 
         copyright:
             - Design by <a href="http://guozs.com/about" title="XiaoGuo" target="_blank">XiaoGuo</a> &copy; 2013

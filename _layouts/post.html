@@ -56,6 +56,12 @@ layout: page
 
         //***********************
         //**评论的代码也删掉哦***
+        // window.disqus_shortname = 'guozs'; // required: replace example with your forum shortname
+        $('#disqus_container .comment').on('click',function(){
+            $(this).html('加载中...');
+            var that = this;
+            $.getScript('http://v1.uyan.cc/js/iframe.js?UYUserId=1729830',function(){$(that).remove()});
+        });
         //**评论的代码也删掉哦***
         //***********************
 
