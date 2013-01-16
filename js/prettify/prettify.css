@@ -33,3 +33,17 @@ li.L1, li.L3, li.L5, li.L7, li.L9{background:#111;}
     .atn{color:#404;}
     .atv{color:#060;}
 }
+
+/* by XiaoGuo */
+div.disqus_container,p.flip
+{
+    margin: 0px;
+    padding: 5px;
+    text-align: center;
+    border: solid 1px #c3c3c3;
+}
+
+div.disqus_container
+{
+    display: none;
+}

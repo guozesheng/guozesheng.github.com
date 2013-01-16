@@ -6,6 +6,7 @@ layout: page
     {{ content }}
     <div style="clear:both"></div>
 </div><!-- .entry -->
+<a href="#" class="flip">评论</a>
 <div id="disqus_container" class="disqus_container"> 
     <div id="disqus_thread">
     <!-- UY BEGIN -->
@@ -13,7 +14,6 @@ layout: page
         <script type="text/javascript" id="UYScript" src="http://v1.uyan.cc/js/iframe.js?UYUserId=1729830" async=""></script>
     <!-- UY END -->
     </div>
-    <a href="#" class="flip">评论</a>
 </div> 
 <script type="text/javascript">
     $(document).ready(function(){
@@ -44,7 +44,7 @@ layout: page
         $('pre').addClass('prettyprint linenums') //添加Google code Hight需要的class
 
         //***********************
-        //**评论的代码也删掉哦***
+        //**评论***
         $(document).ready(function()
         {
             $(".flip").click(function()
@@ -52,15 +52,7 @@ layout: page
                 $(".disqus_container").slideToggle("slow");
             });
         });
-        /*
-        window.disqus_shortname = 'beiyuu'; // required: replace example with your forum shortname
-        $('#disqus_container .comment').on('click',function(){
-            $(this).html('加载中...');
-            var that = this;
-            $.getScript('http://' + disqus_shortname + '.disqus.com/embed.js',function(){$(that).remove()});
-        });
-        // */
-        //**评论的代码也删掉哦***
+        //**评论***
         //***********************
 
         $('.entry a').each(function(index,element){
