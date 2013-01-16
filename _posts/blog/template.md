@@ -1,16 +1,15 @@
 ---
 layout: post
-title: å­˜åœ¨æ„Ÿ
-description: å­˜åœ¨æ„Ÿå¯¹äºæ¯ä¸ªäººçš„ç”Ÿæ´»æœ‰å¤šä¹ˆçš„é‡è¦ï¼Œå¯èƒ½å¹³æ—¶å¹¶ä¸æ˜¯å¤ªå…³æ³¨ï¼Œå…¶å®ä»–å°±æ˜¯ç”Ÿæ´»çš„å…¨éƒ¨
+title: ´æÔÚ¸Ğ
+description:
+´æÔÚ¸Ğ¶ÔÓÚÃ¿¸öÈËµÄÉú»îÓĞ¶àÃ´µÄÖØÒª£¬¿ÉÄÜÆ½Ê±²¢²»ÊÇÌ«¹Ø×¢£¬ÆäÊµËû¾ÍÊÇÉú»îµÄÈ«²¿
 category: blog
 ---
 
 # [{{ page.title }}][1]
-2011-12-29 By {{ site.author_info }}
+2013-01-10 By {{ site.author_info }}
 
-
-
-
-
-[Xiaoguo]:    http://guozs.com  "XiaoGuo"
-[1]:    {{ page.url}}  ({{ page.title }})
+## hello, world
+´æÔÚ¸Ğ¶ÔÓÚÃ¿¸öÈËµÄÉú»îÓĞ¶àÃ´µÄÖØÒª£¬¿ÉÄÜÆ½Ê±²¢²»ÊÇÌ«¹Ø×¢£¬ÆäÊµËû¾ÍÊÇÉú»îµÄÈ«²¿
+[XiaoGuo]: http://guozs.com "XiaoGuo"
+[1]: {{ page.url }} ({{ page.title }})
