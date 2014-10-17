@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>计时器</title>
+
+    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+
+</head>
+
+<body>
+
+    <script src='js/jquery.js'></script>
+
+    <div id="timeinput">
+    Hour: <input id="timehour" />
+    Min: <input id="timemin" />
+    <a style="text-decoration:none;color:white" href="#" onclick="setCountdown()">Go!</a>
+    </div>
+
+    <div id="countdown">
+        <div id='tiles'></div>
+        <div class="labels">
+            <li>Days</li>
+            <li>Hours</li>
+            <li>Mins</li>
+            <li>Secs</li>
+        </div>
+    </div>
+
+    <div style="text-align:center;clear:both;">
+    </div>
+
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>
