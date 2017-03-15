@@ -3,7 +3,7 @@ layout: page
 ---
 <div class="index-artical">
     <ul class="index-left">
-        {% for post in site.categories.blog %}
+        {% for post in site.categories.note %}
             <li>
                 <h2>
                     <a href="{{ post.url }}">{{ post.title }}</a>
@@ -13,16 +13,7 @@ layout: page
         {% endfor %}
     </ul>
     <ul class="index-mid"> </ul>
-    <ul class="index-right">
-        {% for post in site.categories.note%}
-            <li>
-                <h2>
-                    <a href="{{ post.url }}">{{ post.title }}</a>
-                </h2>
-                <span>{{ post.description }}</span>
-            </li>
-        {% endfor %}
-    </ul>
+    <ul class="index-right"></ul>
 </div>
 <script type="text/javascript">
     $(function(){
