@@ -1,18 +1,18 @@
 auto:             true
 
-markdown:         rdiscount
+markdown:         kramdown
 pygments:         true
 paginate:         6
 permalink:        /:title
 
 title:            XiaoGuo's Site
-url:              http://guozs.com
+url:              http://guozesheng.github.io
 feed:             /atom.xml
 author:
     name:         Guo Zesheng
     email:        <a href="mailto:guozesheng@gmail.com">guozesheng@gmail.com</a>
 description:      "XiaoGuo\'s Site"
-author_info:      <a href="http://guozs.com/about">XiaoGuo</a>
+author_info:      <a href="http://guozesheng.github.io/about">XiaoGuo</a>
 
 copyright:
-    - Design by <a href="http://guozs.com/about" title="XiaoGuo" target="_blank">XiaoGuo</a> &copy; 2013
+    - Design by <a href="http://guozesheng.github.io/about" title="XiaoGuo" target="_blank">XiaoGuo</a> &copy; 2017
