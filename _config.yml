@@ -1,13 +1,11 @@
-auto:             true
-
 markdown:         kramdown
-pygments:         true
+highlighter:      true
 paginate:         6
 permalink:        /:title
+gems:             [jekyll-paginate]
 
 title:            XiaoGuo's Site
 url:              http://guozesheng.github.io
-feed:             /atom.xml
 author:
     name:         Guo Zesheng
     email:        <a href="mailto:guozesheng@gmail.com">guozesheng@gmail.com</a>
