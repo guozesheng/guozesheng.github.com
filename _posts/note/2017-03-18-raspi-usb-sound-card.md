@@ -18,6 +18,9 @@ category: note
 
 ## 解决方案
 
+操作系统：Raspbian。  
+版本：Jessie。
+
 ### 1. 首先，确定USB声卡的序列号：
 
 ```
