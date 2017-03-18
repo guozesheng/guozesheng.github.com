@@ -1,5 +1,5 @@
 markdown:         kramdown
-highlighter:      true
+highlighter:      rouge
 paginate:         6
 permalink:        /:title
 gems:             [jekyll-paginate]
